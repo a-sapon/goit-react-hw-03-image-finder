@@ -1,0 +1,15 @@
+.errorContainer {
+  width: 400px;
+  height: 120px;
+  background-color: salmon;
+  border-radius: 6px;
+  padding: 0 20px 0 20px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}

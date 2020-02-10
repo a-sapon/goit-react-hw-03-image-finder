@@ -82,18 +82,26 @@ class App extends Component {
     });
   };
 
+  // componentDidMount() {
+  //   window.addEventListener('keydown', this.handleKeyPress)
+  // }
+
+  // componentWillUnmount() {
+  //   window.removeEventListener('keydown', this.handleKeyPress)
+  // }
+
   openModal = e => {
     this.setState({
       largeImageURL: e.target.dataset.picture
     });
-    window.onkeydown = this.handleKeyPress;
+    // window.onkeydown = this.handleKeyPress;
   };
 
   closeModal = () => {
     this.setState({
       largeImageURL: ''
     });
-    // window.removeEventListener ?
+
   };
 
   handleOverlayClick = e => {
@@ -157,6 +165,7 @@ class App extends Component {
           <Modal
             largeImageURL={largeImageURL}
             handleOverlayClick={this.handleOverlayClick}
+            onHandleKeyPress={this.handleKeyPress}
           />
         )}
         {error && <Error />}

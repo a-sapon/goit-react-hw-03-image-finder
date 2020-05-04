@@ -19,7 +19,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://a-sapon.github.io/goit-react-hw-03-image-finder",
+  "homepage": "https://a-sapon.github.io/image-finder",
   "eslintConfig": {
     "extends": "react-app"
   },
